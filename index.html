@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Feed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Social Media Feed</h1>
+            <div class="user-info">
+                <img src="alien.jpg" alt="User Avatar" class="avatar">
+                <span>Welcome, User!</span>
+            </div>
+        </header>
+
+        <!-- Post Input Section -->
+        <div class="post-input">
+            <textarea id="postContent" placeholder="What's on your mind?" maxlength="250"></textarea>
+            <div class="post-actions">
+                <input type="file" id="postImage" accept="image/*">
+                <button id="postButton">Post</button>
+            </div>
+        </div>
+
+        <!-- Feed Section -->
+        <div id="feed" class="feed">
+            <!-- Posts will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
